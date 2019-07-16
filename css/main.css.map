@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,CAAE;EACE,UAAU,EAAE,UAAU;;AAE1B,eAAe;ACId,IAAK;EACD,WAAW,EAAE,uBAAuB",
+"mappings": "AAAA,CAAE;EACE,UAAU,EAAE,UAAU;;AAE1B,eAAe;ACId,IAAK;EACD,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,uBAAuB",
 "sources": ["../scss/_reset.scss","../scss/main.scss"],
 "names": [],
 "file": "main.css"
