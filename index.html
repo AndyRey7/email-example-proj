@@ -6,6 +6,59 @@
         <title>Emails Project</title>
         <link rel="stylesheet" href="./css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+        <style>
+
+            @media only screen and (min-width: 960px) {
+                .container {
+                    width: 960px;
+                }
+                .container .watch-img {
+                    padding-top: 10px !important;
+                }
+            }
+            @media only screen and (max-width: 960px) {
+                .container {
+                    width: 600px;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .container {
+                    width: 100%;
+                }
+                .header-left {
+                    width: 100%;
+                }
+                .watch-img img{
+                    bottom: -7px !important;
+                }
+                .lets-you-row .left-column {
+                    width: 50%;
+                }
+                .lets-you-row .center-column {
+                    width: 50%;
+                }
+                .lets-you-row .right-column {
+                    width: 100%;
+                }
+                .advanced-table .image-head {
+                    width: 100%;
+                }
+                .left-advanced-table {
+                    width: 100%;
+                }
+                .right-advanced-table {
+                    width: 100%;
+                }
+                .left-advanced-table .store-icon {
+                    position: relative;
+                    right: 100px;
+                }
+                .right-advanced-table .store-icon {
+                    position: relative;
+                    left: 90px;
+                }
+            }
+        </style>
     </head>
     <body>
         <!-- start of html email -->
@@ -32,10 +85,10 @@
                             </table>
                             <!-- end of left header column -->
                             <!-- start of right header column -->
-                            <table class="header-right" width="50%" align="right" border="0" cellspacing="0" cellpadding="0">
+                            <table class="header-right" width="50%" align="center" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td>
-                                        <table class="container" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="padding: 20px;">
+                                        <table class="menu-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="padding: 20px;">
                                             <tr>
                                                 <td align="center">
                                                     <a href="#" style="font-size: 14px; color: #7d7d7d; text-decoration: none; font-weight: 600; text-transform: uppercase;">About</a>
@@ -51,14 +104,14 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="center" style="padding-top: 59px;"><img src="./images/smartwatch.png" style="position: relative; bottom: -5px;"></td>
+                                    <td class="watch-img" align="center" style="padding-top: 59px;"><img src="./images/smartwatch.png" style="position: relative; bottom: -5px;"></td>
                                 </tr>
                             </table>
                             <!-- end of right header column -->
                         </td>
                     </tr>
                     <!-- end of header row -->
-                     <!-- start of product details row -->
+                     <!-- start of lets you details row -->
                     <tr>
                         <td class="lets-you-row" style="background: #fafafa;">
                             <h3 style="text-align: center; font-size: 25px; font-weight: 300;">Hero let's you...</h3>
@@ -148,14 +201,14 @@
                             <!-- end of right detail column -->
                         </td>
                     </tr>
-                    <!-- end of product details row -->
+                    <!-- end of lets you details row -->
                      <!-- start of advanced features row -->
                     <tr>
                         <td>
                             <table class="advanced-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="0"
                             style="padding: 10px;">
                                 <tr style="text-align: center;">
-                                    <td><img src="./images/image_head.jpg"></td>
+                                    <td><img class="image-head" src="./images/image_head.jpg"></td>
                                 </tr>
                                 <tr>
                                     <td style="text-align: center; font-weight: 300; font-size: 20px; padding-top: 20px;">
@@ -178,7 +231,7 @@
                                         </tr>
                                         <tr>
                                             <td align="right">
-                                                <img src="./images/appstore.png" style="padding-bottom: 50px;">
+                                                <img class="store-icon" src="./images/appstore.png" style="padding-bottom: 50px;">
                                             </td>
                                         </tr>
                                     </table>
@@ -193,7 +246,7 @@
                                         </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./images/playstore.png" style="padding-bottom: 50px;">
+                                                    <img class="store-icon" src="./images/playstore.png" style="padding-bottom: 50px;">
                                                 </td>
                                             </tr>
                                     </table>
@@ -327,7 +380,7 @@
                                             <tr>
                                                 <td>
                                                     <!-- start of column table -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                    <table class="left-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
                                                     style="padding: 0 15px;">
                                                         <tr>
                                                             <td>
@@ -354,7 +407,7 @@
                                                     </table>
                                                     <!-- end of column table -->
                                                     <!-- start of column table -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                    <table class="right-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
                                                     style="padding: 0 15px;">
                                                         <tr>
                                                             <td>
@@ -381,7 +434,7 @@
                                                     </table>
                                                     <!-- end of column table -->
                                                     <!-- start of column table -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                    <table class="left-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
                                                     style="padding: 0 15px;">
                                                         <tr>
                                                             <td>
@@ -408,7 +461,7 @@
                                                     </table>
                                                     <!-- end of column table -->
                                                     <!-- start of column table -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                    <table class="right-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
                                                     style="padding: 0 15px;">
                                                         <tr>
                                                             <td>
@@ -435,7 +488,7 @@
                                                     </table>
                                                     <!-- end of column table -->
                                                     <!-- start of column table -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                    <table class="left-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
                                                     style="padding: 0 15px;">
                                                         <tr>
                                                             <td>
@@ -462,7 +515,7 @@
                                                     </table>
                                                     <!-- end of column table -->
                                                     <!-- start of column table -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                    <table class="right-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0"
                                                     style="padding: 0 15px;">
                                                         <tr>
                                                             <td>
@@ -501,7 +554,7 @@
                      <!-- start of interested row -->
                     <tr>
                         <td>
-                            <table class="header-left" width="100%" align="left" border="0" cellspacing="0" cellpadding="0"
+                            <table class="interested-table" width="100%" align="left" border="0" cellspacing="0" cellpadding="0"
                             style="background: rgb(98,251,252);background: linear-gradient(139deg, rgba(98,251,252,1) 0%, rgba(34,150,238,1) 100%); padding: 15px 15px 50px 15px; color: #fff;">
                                 <tr>
                                     <td>
@@ -515,7 +568,6 @@
                                             <a href="#" class="ghost-btn" style="text-decoration: none; color: #fff; border: solid 2px white; text-transform: uppercase; padding: 5px; font-size: 13px; border-radius: 3px; text-align: center;">request a quote</a>
                                         </td>
                                     </tr>
-
                                 </tr>
                             </table>
                         </td>
